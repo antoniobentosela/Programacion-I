@@ -48,11 +48,17 @@ int main()
 
             CargarNumeros (a, b);
             break;
+
         case '2':
+
             CalcularTodos(a,b,&resultadoSuma,&resultadoResta,&resultadoDiv,&resultadoMult,&exitoEnDivision);
+
+
+
                      break;
 
         case '3':
+
             if(exitoEnDivision==1)
             {
                 printf("Division es %f",resultadoDiv);
@@ -133,7 +139,7 @@ float CalcularMultiplicacion (float a, float b)
 
 }
 
-int CalcularDivision (float a, float b, float* resultado)
+float CalcularDivision (float a, float b, float* resultado)
 {
     float retorno =0;
 
@@ -164,5 +170,12 @@ float CalcularTodos (float a, float b,float* resultadoSuma,
 
 }
 
+
+mostrarResultados(resultadoSuma, )
+
+void mostrarResultados( int suma, int resta, int mult, int div){
+
+
+printf("La suma es %d", suma};
 
 
