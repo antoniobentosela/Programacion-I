@@ -1,181 +1,106 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-float CargarNumeros (float a, float b);
-float CalcularSuma (float a, float b);
-float CalcularResta (float a, float b);
-float CalcularMultiplicacion (float a, float b);
-float CalcularDivision (float a, float b);
-
-
+#include "utn.h"
 
 
 int main()
 {
-
-
-    float a;
-    float b;
-    float resultado;
-    char seguir = 'n';
+    char seguir='n';
     char opcion;
-    float resultadoSuma;
-    float resultadoDiv;
-    float resultadoResta;
-    float resultadoMult;
-    float resultadoFact;
-    int exitoEnDivision;
+    int a;
+    int b;
+    int resultadoSuma;
+    int resultadoResta;
+    int resultadoMultiplicacion;
+    int resultadoDivision;
+    int resultadoFactorialA;
+    int resultadoFactorialB;
+    int flagCarga = 0;
+    int flagCalculo = 0;
 
     do
     {
-
         system ("cls");
-        printf ("-----Calculadora-----\n\n");
-        printf ("1- Ingresar operandos \n");
-        printf ("2- Calcular todas las operaciones\n");
-        printf ("3- Salir\n");
-        printf ("Ingrese una opcion: \n");
+        printf ("----Menu de opciones----\n");
+        printf("\na- Ingresar operandos\n");
+        printf("b- Calcular todas las operaciones\n");
+        printf("c- Mostrar resultados\n");
+        printf("d- Salir\n");
+        printf("\n\n");
+        printf ("Ingrese opcion: ");
         opcion = getche ();
         fflush (stdin);
 
-
-
-
-        switch (opcion)
+        switch(opcion)
         {
+            case 'a':
 
-        case '1':
+            if(flagCarga == 0){
 
-            CargarNumeros (a, b);
-            break;
-
-        case '2':
-
-            CalcularTodos(a,b,&resultadoSuma,&resultadoResta,&resultadoDiv,&resultadoMult,&exitoEnDivision);
-
+                a = CargarNum1 (a);
+                b = CargarNum2 (b);
+                flagCarga = 1;
+                system ("pause");
 
 
-                     break;
-
-        case '3':
-
-            if(exitoEnDivision==1)
-            {
-                printf("Division es %f",resultadoDiv);
             }
 
-            break;
+                break;
+
+            case 'b':
+
+                if (flagCarga == 0){
+
+                    printf("\n\nError. Debe cargar los operandos para calcular las operaciones\n\n");
+
+                } else {
+
+                 if (flagCalculo == 0){
+
+                        CalcularTodos (a, b,  &resultadoSuma,  &resultadoResta,  &resultadoMultiplicacion, &resultadoDivision, &resultadoFactorialA, &resultadoFactorialB);
+
+                        flagCalculo = 1;
+                    }
+
+                }
+
+                system ("pause");
+
+                break;
+
+
+            case 'c':
+
+                 if (flagCalculo == 0){
+
+                    printf("\n\nError. Debe hacer los calculos  para mostrar las operaciones\n\n");
+
+               } else {
+
+                MostrarResultados (resultadoSuma, resultadoResta, resultadoMultiplicacion, resultadoDivision, resultadoFactorialA, resultadoFactorialB);
+
+                }
+
+                system ("pause");
+
+                break;
+
+            case 'd':
+
+                printf ("\n\nUsted eligio Salir\n\n");
+                printf ("Confirma Salida?: ");
+                seguir = getche ();
+                fflush(stdin);
+                printf("\n\n");
+                system ("pause");
+
+                break;
         }
 
-
-
-
-
-
-    }
-    while (seguir == 'n');
-
-
-
-
-
-
-
-
-
-
-
-
-
+    } while(seguir=='n');
 
 
     return 0;
 }
-
-
-float CargarNumeros (float a, float b)
-{
-
-
-
-    printf ("\nIngrese un numero: \n");
-    scanf ("%f", &a);
-    printf ("\nIngrese otro numero: \n");
-    scanf ("%f", &b);
-
-
-}
-
-float CalcularSuma (float a, float b)
-{
-
-    float resultado;
-
-    resultado = a + b;
-
-    return resultado;
-
-}
-
-float CalcularResta (float a, float b)
-{
-
-    float resultado;
-
-    resultado = a - b;
-
-    return resultado;
-
-}
-
-float CalcularMultiplicacion (float a, float b)
-{
-
-    float resultado;
-
-    resultado = a * b;
-
-    return resultado;
-
-}
-
-float CalcularDivision (float a, float b, float* resultado)
-{
-    float retorno =0;
-
-    if(b != 0)
-    {
-        *resultado = a / b;
-        retorno = 1;
-    }
-
-    return resultado;
-
-}
-
-
-float CalcularTodos (float a, float b,float* resultadoSuma,
-                     float *resultadoResta, float* resultadoMultiplicacion,float* resultadoDivision,int*exitoEnDivision)
-{
-    *resultadoSuma = CalcularSuma(a,b);
-    *resultadoResta = CalcularDivision(a,b);
-    *resultadoMultiplicacion = CalcularMultiplicacion(a,b);
-    *exitoEnDivision= CalcularDivision(a,b,resultadoDivision);
-
-    printf ("La division es: %f", &resultadoSuma);
-
-
-    return resultado;
-
-
-}
-
-
-mostrarResultados(resultadoSuma, )
-
-void mostrarResultados( int suma, int resta, int mult, int div){
-
-
-printf("La suma es %d", suma};
 
 
