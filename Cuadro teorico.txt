@@ -1,0 +1,3 @@
+alta -----  no hay lugar --- lo informo
+		hay lugar----Busco el indice libre ----- pido legajo ----- el legajo ya existe ----- lo informo
+									no existe ----- pido el resto de los datos---- lo guardo en el indice libre.
