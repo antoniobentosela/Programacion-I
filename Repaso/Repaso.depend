@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1570563899 source:c:\users\sofia\desktop\repaso\bibliotecap.c
+
+1570575194 source:c:\users\sofia\desktop\repaso\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
