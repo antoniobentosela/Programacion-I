@@ -1,0 +1,47 @@
+# depslib dependency file v1.0
+1570632659 source:c:\users\alumno\desktop\auto.c
+	"auto.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1570630692 c:\users\alumno\desktop\auto.h
+	"marca.h"
+	"color.h"
+
+1570627914 c:\users\alumno\desktop\marca.h
+
+1570627914 c:\users\alumno\desktop\color.h
+
+1570628171 source:c:\users\alumno\desktop\color.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"color.h"
+
+1570628171 source:c:\users\alumno\desktop\marca.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"marca.h"
+
+1570634927 source:c:\users\alumno\desktop\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"marca.h"
+	"color.h"
+	"auto.h"
+
+1570627203 c:\users\alumno\desktop\parcial\marca.h
+
+1570626243 c:\users\alumno\desktop\parcial\color.h
+
+1570627425 c:\users\alumno\desktop\parcial\auto.h
+	"marca.h"
+	"color.h"
+
