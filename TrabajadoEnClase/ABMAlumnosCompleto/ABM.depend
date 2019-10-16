@@ -174,3 +174,44 @@
 1569850100 source:c:\users\alumno\desktop\abmalumnosfullfull\almuerzo.c
 	"almuerzo.h"
 
+1571225872 source:c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\almuerzo.c
+	"almuerzo.h"
+
+1571225872 c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\almuerzo.h
+	"alumno.h"
+	"comida.h"
+
+1571225872 c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\alumno.h
+	"carrera.h"
+
+1571225872 c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\carrera.h
+
+1571225872 c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\comida.h
+
+1571225872 source:c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\alumno.c
+	"alumno.h"
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+
+1571225872 source:c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\carrera.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+
+1571225872 source:c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\comida.c
+	"comida.h"
+
+1571225872 source:c:\users\alumno\desktop\programacion-i\trabajadoenclase\abmalumnoscompleto\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"carrera.h"
+	"alumno.h"
+	"comida.h"
+	"almuerzo.h"
+

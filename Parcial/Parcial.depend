@@ -45,3 +45,20 @@
 	"marca.h"
 	"color.h"
 
+1571225872 source:c:\users\alumno\desktop\programacion-i\parcial\main.c
+	<stdio.h>
+	<stdlib.h>
+	<conio.h>
+	<string.h>
+	"marca.h"
+	"color.h"
+	"auto.h"
+
+1571225872 c:\users\alumno\desktop\programacion-i\parcial\marca.h
+
+1571225872 c:\users\alumno\desktop\programacion-i\parcial\color.h
+
+1571225872 c:\users\alumno\desktop\programacion-i\parcial\auto.h
+	"marca.h"
+	"color.h"
+
