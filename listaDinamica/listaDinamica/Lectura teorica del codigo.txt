@@ -1,0 +1,37 @@
+tam: me dice la cantidad de elementos en el array / me dice el indice del lugar libre
+cant: contar las variables 
+buffer: es una matriz de tres filas y 30 columnas, indice 0 (id), indice 1 (nombre), indice 2 (sueldo)
+Puntero a empleado tiene que apuntar a NULL (buena practica)
+Doble puntero lista: con malloc pedimos lugar para guardar un puntero (direccion de memoria).
+
+Verifico si el malloc me dio lugar o me devolvio NULL (if)
+
+Con el file open, abro el archivo excel empleados.
+
+En el excel la (,) me separa los datos (id, nombre, sueldo)
+
+El primer fscanf lee la primer linea que no me sirve, para asi dejar el cursor en la segundo linea 
+y que el segundo fscanf empieze de ahi(lectura fantasma).
+
+Segundo fscanf: Se le pasa el puntero a file (archivo a leer), "%[^,]," significa lee todo hasta la coma 
+y la coma del final es para que la saltee. "%[^\n]\n" es lo mismo, pero para saltear el barra \n 
+y se vaya a la linea siguiente.
+
+El siguiente if valida si pudo leer o no el file.
+
+Se crea un empleado.
+
+newEmpleadoParam consigue el espacio con el malloc, atoi es el parseInt de C.
+se le pasa los datos y los guarda, devuelve el puntero con el empleado cargado.
+
+Y se guarda en auxEmpleado.
+
+Se valida que lo haya podido guardar.
+
+lista + tam, tam es el desplazamiento. Se carga el auxEmpleado en lista.
+
+tam ++ de que sume un elemento.
+
+el agrandar lista, agranda la lista, crea un espacio nuevo para guardar un empleado mas.
+
+tam + 1 porque siempre quiero 1 mas de lo q tengo.
